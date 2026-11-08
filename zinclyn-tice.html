@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zinclyn-TICE | Technology & Digital Solutions</title>
+
+    <meta name="description"
+          content="Zinclyn-TICE is the technology division behind Zinclyn2, with the capacity to undertake independent technology projects.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263449;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #10243a;
+            color: white;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .brand span {
+            color: #35c5b0;
+        }
+
+        .header-label {
+            color: #c6d5e5;
+            font-size: 13px;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 55px auto;
+            padding: 0 24px;
+        }
+
+        .hero {
+            background: white;
+            padding: 55px 45px;
+            border-radius: 14px;
+            border: 1px solid #e0e8f0;
+            border-top: 4px solid #21a99a;
+            box-shadow: 0 10px 30px rgba(16, 36, 58, 0.06);
+        }
+
+        .eyebrow {
+            color: #168b80;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            color: #10243a;
+            font-size: clamp(30px, 5vw, 44px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            font-size: 17px;
+            color: #526176;
+            max-width: 720px;
+            margin-bottom: 28px;
+        }
+
+        .section {
+            margin-top: 32px;
+            padding: 28px;
+            background: #ffffff;
+            border: 1px solid #e0e8f0;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #10243a;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            color: #526176;
+        }
+
+        .tagline {
+            margin-top: 28px;
+            padding-left: 16px;
+            border-left: 3px solid #21a99a;
+            color: #10243a;
+            font-weight: 600;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 11px 19px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .primary-link {
+            background: #10243a;
+            color: white;
+        }
+
+        .primary-link:hover {
+            background: #1d3b59;
+        }
+
+        .secondary-link {
+            border: 1px solid #cbd6e2;
+            color: #10243a;
+            background: white;
+        }
+
+        .secondary-link:hover {
+            background: #f0f5f9;
+        }
+
+        /* Technology leadership highlight */
+        .leadership {
+            background: #edf8f7;
+            border: 1px solid #c4e7e2;
+            border-left: 4px solid #21a99a;
+        }
+
+        .leader-name {
+            color: #087f74;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid #087f74;
+        }
+
+        .leader-name:hover {
+            color: #10243a;
+            border-bottom-color: #10243a;
+        }
+
+        /* Contact form */
+        .contact-section {
+            margin-top: 32px;
+            padding: 35px;
+            background: #ffffff;
+            border: 1px solid #e0e8f0;
+            border-top: 4px solid #21a99a;
+            border-radius: 12px;
+        }
+
+        .contact-intro {
+            color: #526176;
+            margin-bottom: 22px;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #cbd6e2;
+            border-radius: 6px;
+            background: #ffffff;
+            color: #263449;
+            font: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid #21a99a;
+            outline-offset: 1px;
+            border-color: #21a99a;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .send-button {
+            justify-self: start;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            background: #10243a;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background: #1d3b59;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            color: #718096;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 18px 6%;
+            }
+
+            main {
+                margin: 28px auto;
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 32px 23px;
+            }
+
+            .section,
+            .contact-section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">Zinclyn<span>-TICE</span></div>
+        <div class="header-label">Technology & Digital Solutions</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="eyebrow">Technology Division</div>
+
+            <h1>Building Digital Solutions</h1>
+
+            <p class="intro">
+                Zinclyn-TICE is the technology division behind Zinclyn2,
+                focused on the technology that supports its digital
+                marketplace. It also operates as an independent technology
+                initiative, with the capacity to undertake separate projects.
+            </p>
+
+            <div class="tagline">
+                Technology behind Zinclyn2. Possibilities beyond it.
+            </div>
+
+            <div class="links">
+                <a href="https://zinclyn2-demo-final-351ef.containers.snapdeploy.app/" class="link-button primary-link">
+                    Explore Zinclyn2 &rarr;
+                </a>
+
+                <a href="#contact"
+                   class="link-button secondary-link">
+                    Contact
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Our Role</h2>
+
+            <p>
+                Zinclyn-TICE supports the development of Zinclyn2's
+                technology and digital infrastructure. Its broader
+                direction is to apply technology and software development
+                to projects beyond the marketplace itself.
+            </p>
+        </section>
+
+        <section class="section leadership">
+            <h2>Technology Leadership</h2>
+
+            <p>
+                Zinclyn-TICE operates under the technology leadership
+                of
+                <a href="https://waqasrabi-prof.vercel.app/"
+                   class="leader-name"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Waqas Rabi
+                </a>,
+                who also leads the technology function for Zinclyn2.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Independent Projects</h2>
+
+            <p>
+                In addition to its work on Zinclyn2, Zinclyn-TICE is
+                intended to undertake independent technology projects.
+                Further information about its capabilities, services,
+                and project enquiries will be added here.
+            </p>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contact Zinclyn-TICE</h2>
+
+            <p class="contact-intro">
+                For technology project enquiries or further information,
+                please send us a message using the form below.
+            </p>
+
+            <form class="contact-form"
+                  action="https://formspree.io/f/xreveyjo"
+                  method="POST">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    aria-label="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    aria-label="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    aria-label="Subject"
+                    required>
+
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    aria-label="Your Message"
+                    required></textarea>
+
+                <button type="submit" class="send-button">
+                    Send Message &rarr;
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; <span id="currentYear"></span> Zinclyn-TICE.
+        Technology & Digital Solutions.
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
